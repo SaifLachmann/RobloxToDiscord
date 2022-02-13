@@ -11,9 +11,9 @@ def SendMessageToDiscord(Msg):
         "embeds" = {
             "description" = Msg,
             "type"= "rich",
-			"color"= tonumber(0x3bfff8),
-           
+	    "color"= tonumber(0x3bfff8),
     }
+	    
     requests.post(Discord_Webhook, data=Message)
 
 app = FastAPI()
